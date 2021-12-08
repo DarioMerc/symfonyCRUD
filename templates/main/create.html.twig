@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Create{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <h3>Create Form</h3>
+        <div class="col-md-6 offset md-3">
+            {{form_start(form)}}
+                {{form(form)}}
+            {{form_end(form)}}
+        </div>
+    </div>
+</div>
+{% endblock %}
